@@ -37,6 +37,6 @@ def convert_to_hex (n, base):
     elif base == "bin":
         return convert_bin_to_hex (n)
     elif base == "hex":
-        return n
+        return str (n)
     else:
         return f"ERROR : {base} IS NOT A SUPPORTED BASE YET. IT FUNCTIONS ONLY FOR bin/dec/hex BASES ONLY"
