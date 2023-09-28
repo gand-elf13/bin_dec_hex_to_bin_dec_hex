@@ -18,5 +18,3 @@ def convert_hex_to_int(n):
         converted_n =converted_n + (int(convert_remainder(i))*(16**power))
         power += 1
     return converted_n
-
-print(convert_hex_to_int("1e"))
