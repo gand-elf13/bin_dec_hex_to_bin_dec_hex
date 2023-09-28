@@ -1,19 +1,21 @@
-import library
+def convert_remainder (remainder):
+    higher_coefs = {"a":10,"b":11,"c":12,"d":13,"e":14,"f":15 }
+    if remainder not in higher_coefs:
+        return str (remainder)
+    else:
+        return higher_coefs [remainder]
 
 
 
 
-def convert_hex_to_dec(n):
+def convert_hex_to_int(n):
     
     converted_n = ""
 
-    while True:
-        result , remainder = divmod(n , 2)
-        converted_n += library.convert_remainder (remainder)
+    for i in n:
+        
+        converted_n += str(convert_remainder (i))
 
-        if result == 0:
-            break
-        n = result
-    return converted_n [::-1]
+    return converted_n
 
-print(convert_hex_to_dec("a"))
+print(convert_hex_to_int("1438aef4"))
