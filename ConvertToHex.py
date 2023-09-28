@@ -16,7 +16,7 @@ def convert_remainder (remainder):
 def convert_dec_to_hex (n):
     converted_n = ""
     while True:
-        result, remainder = divmod (n, 16)
+        result, remainder = divmod (int (n), 16)
         converted_n += convert_remainder (remainder)
         if result == 0:
             break

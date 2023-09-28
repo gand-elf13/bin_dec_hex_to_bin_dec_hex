@@ -1,3 +1,6 @@
+from ConvertToHex import convert_to_hex
+
+
 def wait_for_input (text, error_text, *possible_inputs):
     current_input = input (text)
     while current_input not in possible_inputs:
@@ -34,6 +37,7 @@ def is_input_valid (n, initial_base):
     else:
         return False
 
+
 def get_n_and_base ():
     while True:
         n = input ("Insert the number : ")
@@ -48,6 +52,7 @@ def get_n_and_base ():
             print ("ERROR, THE INPUT NUMBER DOESN'T FIT ITS BASE")
     return n, initial_base
 
+
 def get_inputs ():
     n, initial_base = get_n_and_base ()
     final_base = wait_for_input (
@@ -55,7 +60,30 @@ def get_inputs ():
         "ERROR, FINAL BASE IS NOT SUPPORTED YET",
         "dec", "bin", "hex"
     )
-    print(n, initial_base, final_base)
+    return n, initial_base, final_base
 
 
-get_inputs()
+def output_result (n, initial_base, final_base):
+    final_n = ""
+    if final_base == "hex":
+        final_n = convert_to_hex (n, initial_base)
+    print (f"The number {n} ({initial_base}) in {final_base} base is : {final_n}")
+
+
+def main_loop ():
+    print ("This is a program used to convert numbers into different bases")
+    print ("Please keep in mind that the program is case sensitive!")
+    while True:
+        n, initial_base, final_base = get_inputs ()
+        output_result (n, initial_base, final_base)
+        should_continue = wait_for_input (
+            "Do you want the program to convert another number? (y/n) : ",
+            "ERROR : IT IS A YES OR NO QUESTION ",
+            "y", "n",
+        )
+        if should_continue == "n":
+            break
+
+
+if __name__ == "__main__":
+    main_loop ()
