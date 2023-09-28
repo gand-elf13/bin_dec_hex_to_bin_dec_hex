@@ -83,7 +83,3 @@ def main_loop ():
         )
         if should_continue == "n":
             break
-
-
-if __name__ == "__main__":
-    main_loop ()
