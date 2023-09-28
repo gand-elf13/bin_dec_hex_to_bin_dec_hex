@@ -31,5 +31,3 @@ def convert_bin_to_int(n):
         power += 1
     return converted_n
 
-
-print(convert_bin_to_int("10010011"))
