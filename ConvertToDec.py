@@ -8,7 +8,7 @@ def convert_remainder (remainder):
 
 
 
-def convert_hex_to_int(n):
+def convert_hex_to_dec(n):
     
     converted_n = 0
     power = 0
@@ -20,7 +20,7 @@ def convert_hex_to_int(n):
     return converted_n
 
 
-def convert_bin_to_int(n):
+def convert_bin_to_dec(n):
     
     converted_n = 0
     power = 0
