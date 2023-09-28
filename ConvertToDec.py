@@ -9,7 +9,7 @@ def convert_remainder (remainder):
 
 
 def convert_hex_to_dec(n):
-    
+    n = str(n)
     converted_n = 0
     power = 0
 
@@ -22,6 +22,7 @@ def convert_hex_to_dec(n):
 
 def convert_bin_to_dec(n):
     
+    n = str(n)
     converted_n = 0
     power = 0
 
@@ -31,3 +32,21 @@ def convert_bin_to_dec(n):
         power += 1
     return converted_n
 
+
+def convert_to_dec(n,base):
+    
+    answ = 0
+    if base == "bin":
+        answ = convert_bin_to_dec(n)
+    elif base == "dec":
+        answ = n
+    elif base == "hex":
+        answ = convert_hex_to_dec(n)
+    else:
+        answ = "ERROR BASE NOT SUPORTED YET"
+
+    return answ
+
+print(convert_to_dec(11,"bin"))
+
+print(convert_to_dec("1a","hex"))
