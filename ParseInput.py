@@ -1,4 +1,4 @@
-# from ConvertToDec import convert_to_dec
+from ConvertToDec import convert_to_dec
 # from ConvertToBin import convert_to_bin
 from ConvertToHex import convert_to_hex
 
@@ -70,7 +70,7 @@ def output_result (n, initial_base, final_base):
     if final_base == "hex":
         final_n = convert_to_hex (n, initial_base)
     elif final_base == "dec":
-        pass # final_n = convert_to_dec (n, initial_base)
+        final_n = convert_to_dec (n, initial_base)
     elif final_base == "bin":
         pass # final_n = convert_to_bin (n, initial_base)
     print (f"The number {n} ({initial_base}) in {final_base} base is : {final_n}")
