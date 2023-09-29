@@ -74,18 +74,3 @@ def output_result (n, initial_base, final_base):
     elif final_base == "bin":
         pass # final_n = convert_to_bin (n, initial_base)
     print (f"The number {n} ({initial_base}) in {final_base} base is : {final_n}")
-
-
-def main_loop ():
-    print ("This is a program used to convert numbers into different bases")
-    print ("Please keep in mind that the program is case sensitive!")
-    while True:
-        n, initial_base, final_base = get_inputs ()
-        output_result (n, initial_base, final_base)
-        should_continue = wait_for_input (
-            "Do you want the program to convert another number? (y/n) : ",
-            "ERROR : IT IS A YES OR NO QUESTION ",
-            "y", "n",
-        )
-        if should_continue == "n":
-	    break
