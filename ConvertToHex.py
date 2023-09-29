@@ -1,3 +1,6 @@
+from ConvertToDec import convert_to_dec
+
+
 def convert_remainder (remainder):
     higher_coefs = {
         10 : "a",
@@ -25,7 +28,7 @@ def convert_dec_to_hex (n):
 
 
 def convert_bin_to_hex (b):
-    n = int (b, 2) # WE WILL USE MAXIME'S FUNCTIONS WHEN AVAILABLE
+    n = convert_to_dec (b, "bin")
     return convert_dec_to_hex (n)
 
 
