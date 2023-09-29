@@ -1,4 +1,5 @@
-# convertir dec en entier, puis en bin
+# en cas de hex, convertir en dec, puis en bin
+# en cas de dec, convertir en bin directement
 
 def convert_dec_to_bin (n):
     converted_n = ""
