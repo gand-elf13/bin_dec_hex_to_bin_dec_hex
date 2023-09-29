@@ -2,7 +2,17 @@ from ConvertToDec import convert_to_dec
 # from ConvertToBin import convert_to_bin
 from ConvertToHex import convert_to_hex
 
-
+'''
+wait_for_input is a function that is made to get user's input,
+in a more bug-robust way. It basically prints a text,
+gets user's input, and if the user's input is in one of 
+the possible supported inputs, then it is returned.
+Otherwise, the function prints an error text and gets user's input
+until the input is a supported one.
+This function takes 2 strings (text, error_text) and a variadic number
+of following arguments (*possible_inputs) corresponding to
+the different available inputs that the user can choose
+'''
 def wait_for_input (text, error_text, *possible_inputs):
     current_input = input (text)
     while current_input not in possible_inputs:
@@ -11,24 +21,44 @@ def wait_for_input (text, error_text, *possible_inputs):
     return current_input
 
 
+'''
+is_binary is a function that checks if a string is a binary number.
+Since binary notation only uses zeros and ones, the sum of the number of "0"
+and "1" in a string should be equal to its length, in case the string really
+is a binary number.
+is_binary takes a string n, and returns a bool
+'''
 def is_binary (n):
     return len (n) == (n.count ("0") + n.count ("1"))
     
-    
+'''
+is_decimal is a function that checks if a string is a number
+by checking if every character is a digit.
+is_decimal takes a string n and returns a bool.
+'''
 def is_decimal (n):
     for char in n:
         if char not in "0123456789":
             return False
     return True
     
-    
+'''
+is_hexadecimal is a function that checks if a string is a hexadecimal number,
+by checking if every character is in "0123456789abcdef" (the hexadecimal's coefficients).
+is_hexadecimal takes a string n and returns a bool
+'''
 def is_hexadecimal (n):
     for char in n:
         if char.lower () not in "0123456789abcdef":
             return False
     return True
 
-
+'''
+is_input_valid is a function that checks if the user's input
+fits its base.
+is_input_valid takes two strings : n and initial_base,
+and returns a bool.
+'''
 def is_input_valid (n, initial_base):
     if initial_base == "dec":
         return is_decimal (n)
@@ -39,7 +69,10 @@ def is_input_valid (n, initial_base):
     else:
         return False
 
-
+'''
+get_n_and_base is a function that gets user's input number
+and its base. It takes no arguments, and returns two strings: n and initial_base
+'''
 def get_n_and_base ():
     while True:
         n = input ("Insert the number : ")
@@ -54,7 +87,11 @@ def get_n_and_base ():
             print ("ERROR, THE INPUT NUMBER DOESN'T FIT ITS BASE")
     return n, initial_base
 
-
+'''
+get_inputs is a function that gets all necessary user's inputs.
+It takes no arguments, and returns three strings : 
+n, initial_base and final_base
+'''
 def get_inputs ():
     n, initial_base = get_n_and_base ()
     final_base = wait_for_input (
