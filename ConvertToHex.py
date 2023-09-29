@@ -1,3 +1,9 @@
+from ConvertToDec import convert_to_dec
+
+'''
+convert_remainder is a function that takes the remainder (int),
+converts it to a hexadecimal notation, and returns it (string).
+'''
 def convert_remainder (remainder):
     higher_coefs = {
         10 : "a",
@@ -12,7 +18,12 @@ def convert_remainder (remainder):
     else:
         return higher_coefs [remainder]
 
-
+'''
+convert_dec_to_hex is a function that takes a string n
+(containing a number in decimal notation), that
+converts it to a hexadecimal notation, and that
+returns it (as a string)
+'''
 def convert_dec_to_hex (n):
     converted_n = ""
     while True:
@@ -21,16 +32,25 @@ def convert_dec_to_hex (n):
         if result == 0:
             break
         n = result
-    return converted_n [::-1]
+    return converted_n [::-1] # Reverses the string by slicing
 
-
+'''
+convert_bin_to_hex is a function that takes a string b
+(containing a binary number), converts it to hexadecimal,
+and returns it (as a string)
+'''
 def convert_bin_to_hex (b):
-    n = int (b, 2) # WE WILL USE MAXIME'S FUNCTIONS WHEN AVAILABLE
+    n = convert_to_dec (b, "bin")
     return convert_dec_to_hex (n)
 
 
-# MAIN FUNCTION
-# THIS SHOULD BE THE ONLY FUNCTION THAT'S EXECUTED FROM THIS FILE!!!
+'''
+convert_to_hex is a function that takes a string n, and 
+a string called base. This function converts n in
+hexadecimal depending on the string base.
+It returns ultimately a string containing the hexadecimal
+notation of n.
+'''
 def convert_to_hex (n, base):
     if base == "dec":
         return convert_dec_to_hex (n)
