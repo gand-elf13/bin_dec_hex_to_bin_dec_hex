@@ -27,5 +27,5 @@ if __name__ == "__main__":
         if should_continue == "n":
             print ("PROCESS IS NOW EXITING")
             break
-		else:
-	    	print ("\n")
+        else:
+        	print ("\n")
