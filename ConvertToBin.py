@@ -35,7 +35,7 @@ def convert_to_bin (n, base):
 
 
 
-
-print(convert_to_bin("1988971", "dec"))
-print(convert_to_bin("1ae867f987d", "hex"))
-print(convert_to_bin("100100101", "bin"))
+if __name__ == "__main__":
+	print(convert_to_bin("1988971", "dec"))
+	print(convert_to_bin("1ae867f987d", "hex"))
+	print(convert_to_bin("100100101", "bin"))
