@@ -1,5 +1,12 @@
 import tkinter as tk
 import tkinter.font as tkFont
+from ConvertToDec import convert_to_dec
+from ConvertToBin import convert_to_bin
+from ConvertToHex import convert_to_hex
+
+ConvertTo = str
+ConvertFrom = str
+entry=tk.StringVar()
 
 class App:
     def __init__(self, root):
@@ -14,7 +21,7 @@ class App:
         root.geometry(alignstr)
         root.resizable(width=False, height=False)
 
-        GLabel_483=tk.Label(root)
+        ToConvert = GLabel_483=tk.Label(root,textvariable = entry)
         ft = tkFont.Font(family='Times',size=18)
         GLabel_483["font"] = ft
         GLabel_483["fg"] = "#333333"
@@ -30,6 +37,8 @@ class App:
         GLineEdit_971["justify"] = "center"
         GLineEdit_971["text"] = "to convert"
         GLineEdit_971.place(x=220,y=190,width=70,height=25)
+
+
 
         GButton_509=tk.Button(root)
         GButton_509["bg"] = "#f0f0f0"
@@ -127,33 +136,43 @@ class App:
         GMessage_693.place(x=220,y=400,width=80,height=25)
 
     def GButton_509_command(self):
-        print("command")
-
+    
+        final_n = ""
+        if ConvertTo == "hex":
+            final_n = convert_to_hex (ConvertFrom, ConvertFrom)
+        elif ConvertTo == "dec":
+            final_n = convert_to_dec (To, ConvertFrom)
+        elif ConvertTo == "bin":
+            final_n = convert_to_bin (n, ConvertFrom)
+        
 
     def GButton_642_command(self):
-        ConvertFrom = bin
+        ConvertFrom = "bin"
 
 
     def GButton_140_command(self):
-        ConvertFrom = dec
+        ConvertFrom = "dec"
 
 
     def GButton_404_command(self):
-        ConvertFrom = hex
+        ConvertFrom = "hex"
 
 
     def GButton_579_command(self):
-        ConvertTo = bin
+        ConvertTo = "bin"
 
 
     def GButton_132_command(self):
-        ConvertTo = dec
+        ConvertTo = "dec"
 
 
     def GButton_155_command(self):
-        ConvertTo = hex
+        ConvertTo = "hex"
 
 if __name__ == "__main__":
+
+
     root = tk.Tk()
     app = App(root)
     root.mainloop()
+
