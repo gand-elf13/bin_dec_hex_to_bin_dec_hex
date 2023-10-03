@@ -1,5 +1,13 @@
 # bin_dec_hex_to_bin_dec_hex
 ***
+
+## Table of Contents
+1. [Status]()
+2. [Installation](##status-du-projet)
+3. [Utilisation](#installation)
+4. [Cahier des charges](#collaboration)
+5. [regles de syntaxe](#faqs)
+
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
 
 Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
@@ -40,4 +48,9 @@ Pour pouvoir utiliser ce programme, il ne faut qu'exécuter le fichier main.py p
 - IHM en ligne de commande obligatoire
 - nom de fonction reflechis
 - commente et documenté
--comparaison avec le travail d'une IA generative
+- comparaison avec le travail d'une IA generative
+
+## regles de syntaxe
+
+- les fonctions sont sous la forme : lorem_ipsum_dolom
+- les variables sont sous la forme : LoremIpsumDolom
