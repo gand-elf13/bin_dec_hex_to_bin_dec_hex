@@ -2,10 +2,10 @@
 ***
 
 ## Table of Contents
-1. [Status]()
-2. [Installation](##status-du-projet)
-3. [Utilisation](#installation)
-4. [Cahier des charges](#collaboration)
+1. [Status](#status-du-projet)
+2. [Installation](#installation)
+3. [Utilisation]()
+4. [Cahier des charges](#utilisation-du-programme)
 5. [regles de syntaxe](#faqs)
 
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
