@@ -52,5 +52,5 @@ Pour pouvoir utiliser ce programme, il ne faut qu'exécuter le fichier main.py p
 
 ## regles de syntaxe
 
-- les fonctions sont sous la forme : lorem_ipsum_dolom
-- les variables sont sous la forme : LoremIpsumDolom
+> les fonctions sont sous la forme : lorem_ipsum_dolom
+> les variables sont sous la forme : LoremIpsumDolom
