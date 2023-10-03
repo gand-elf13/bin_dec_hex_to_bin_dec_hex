@@ -17,7 +17,7 @@ def convert_dec_to_bin (n):
 # convertir du decimal au binaire, renversement du resultat pour l'afficher correctement
 
 def convert_hex_to_bin (n):
-    n = convert_to_dec(n, "hex")
+    n = int(convert_to_dec(n, "hex"))
     return convert_dec_to_bin(n)
 # utilisation d'la fonc de M-A, puis resultat obtenu en dec converti en bin via la fonction édictée plus haut
 
@@ -30,12 +30,11 @@ def convert_to_bin (n, base):
         return n
     else:
         return "vous n'avez pas entrer une base correcte, veuillez rééssayer avec une hex, bin ou dec"
-    return convert_to_bin
 #choix des fonctions utilisés pour convertir n en base bin
 
 
 
 if __name__ == "__main__":
-	print(convert_to_bin("1988971", "dec"))
-	print(convert_to_bin("1ae867f987d", "hex"))
-	print(convert_to_bin("100100101", "bin"))
+	print(convert_to_bin("1988971", "dec") == "111100101100101101011")
+	print(convert_to_bin("1ae867f987d", "hex") == "11010111010000110011111111001100001111101")
+	print(convert_to_bin("100100101", "bin") == "100100101")

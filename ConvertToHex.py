@@ -60,3 +60,8 @@ def convert_to_hex (n, base):
         return str (n)
     else:
         return f"ERROR : {base} IS NOT A SUPPORTED BASE YET. IT FUNCTIONS ONLY FOR bin/dec/hex BASES ONLY"
+    
+if __name__ == "__main__":
+    print(convert_to_hex("1988971", "dec") == "1e596b")
+    print(convert_to_hex("1ae867f987d", "hex") == "1ae867f987d")
+    print(convert_to_hex("100100101", "bin") == "125")
