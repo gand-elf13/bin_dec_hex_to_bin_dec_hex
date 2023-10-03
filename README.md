@@ -40,3 +40,4 @@ Pour pouvoir utiliser ce programme, il ne faut qu'exécuter le fichier main.py p
 - IHM en ligne de commande obligatoire
 - nom de fonction reflechis
 - commente et documenté
+-comparaison avec le travail d'une IA generative
