@@ -7,9 +7,22 @@ Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
 ## en ligne de commande
 
-$git clone https://github.com/gand-elf13/bin_dec_hex_to_bin_dec_hex.git
-$cd bin_dec_hex_to_bin_dec_hex
-$python3 main.py
+```
+$ git clone https://github.com/gand-elf13/bin_dec_hex_to_bin_dec_hex.git
+
+$ cd bin_dec_hex_to_bin_dec_hex
+
+$ python3 main.py
+```
+## en utilisant le gui
+
+- telecharger le zip
+
+- le decompresser
+
+- ouvrir le fichier obtenu
+
+- lancer le fichier main.py avec python3
 
 # Utilisation du programme
 Ne touchez pas aux modules ni au programme stockés dans le fichier.
