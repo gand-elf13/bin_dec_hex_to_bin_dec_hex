@@ -3,10 +3,10 @@
 
 ## Table of Contents
 1. [Status](#status-du-projet)
-2. [Installation](#installation)
-3. [Utilisation]()
-4. [Cahier des charges](#utilisation-du-programme)
-5. [regles de syntaxe](#faqs)
+2. [Installation](#installation-du-programme)
+3. [Utilisation](#utilisation-du-programme)
+4. [Cahier des charges](#cahier-des-charges)
+5. [regles de syntaxe](#regles-de-syntaxe)
 
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
 
