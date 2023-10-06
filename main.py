@@ -1,4 +1,5 @@
 from ParseInput import get_inputs, output_result, wait_for_input
+from AsciiArt import print_with_font
 
 '''
 introduce_program is a function that simply prints a description about the program.
@@ -14,6 +15,7 @@ def introduce_program ():
 MAIN PART OF THE PROGRAM
 '''
 if __name__ == "__main__":
+    print_with_font ("PYTHON NUMBER PROGRAM")
     introduce_program ()
     while True:
         n, initial_base, final_base = get_inputs ()
