@@ -77,7 +77,7 @@ def convert_to_hex (n, base):
     elif base == "hex":
         return str (n)
     else:
-        return f"ERROR : {base} IS NOT A SUPPORTED BASE YET. IT FUNCTIONS ONLY FOR bin/dec/hex BASES ONLY"
+        return "ERROR : NOT A SUPPORTED BASE YET. IT FUNCTIONS ONLY FOR bin/dec/hex BASES ONLY"
 
 if __name__ == "__main__":
     print(convert_to_hex("-1988971", "dec"))

@@ -125,8 +125,7 @@ def output_result (n, initial_base, final_base):
         final_n = convert_to_dec (n, initial_base)
     elif final_base == "bin":
         final_n = convert_to_bin (n, initial_base)
-    print (f"The number {n} ({initial_base}) in {final_base} base is : {final_n}")
-
+    print ("The number %s (%s) in %s base is %s" % (n, initial_base, final_base, final_n))
 
 
 

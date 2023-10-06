@@ -28,7 +28,7 @@ def get_font ():
                     font_dic [letter].append (chars)
         file.close ()
         return font_dic
-        
+
 
 def print_with_font (text):
     text = text.upper ()
@@ -36,9 +36,9 @@ def print_with_font (text):
     for i in range (5):
         for letter_index, letter in enumerate(text):
             separator = " "
-            letter_chars = font_dic [letter]
-            current_letter_char = letter_chars [i]
             if letter in alphabet:
+                letter_chars = font_dic [letter]
+                current_letter_char = letter_chars [i]
                 print (current_letter_char, end = separator)
             else:
                 print (letter, end = separator)
