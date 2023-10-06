@@ -5,7 +5,7 @@
 1. [Status](#Status-du-projet)
 2. [Installation](#Installation-du-programme)
 3. [Utilisation](#Utilisation-du-programme)
-4. [Cahier des charges](#Dahier-des-charges)
+4. [Cahier des charges](#Cahier-des-charges)
 5. [Règles de syntaxe](#Règles-de-syntaxe)
 
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
