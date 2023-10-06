@@ -2,21 +2,20 @@
 ***
 
 ## Table of Contents
-1. [Status](#status-du-projet)
-2. [Installation](#installation-du-programme)
-3. [Utilisation](#utilisation-du-programme)
-4. [Cahier des charges](#cahier-des-charges)
-5. [regles de syntaxe](#regles-de-syntaxe)
+1. [Status](#Status-du-projet)
+2. [Installation](#Installation-du-programme)
+3. [Utilisation](#Utilisation-du-programme)
+4. [Cahier des charges](#Dahier-des-charges)
+5. [Règles de syntaxe](#Règles-de-syntaxe)
 
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
 Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
-## status du projet
+## Status du projet
 phase finale, mise au propre + debug
 
-## installation du programme
-
-### en ligne de commande
+## Installation du programme
+### En ligne de commande
 ```
 $ git clone https://github.com/gand-elf13/bin_dec_hex_to_bin_dec_hex.git
 $ cd bin_dec_hex_to_bin_dec_hex
