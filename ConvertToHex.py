@@ -45,7 +45,7 @@ def convert_dec_to_hex (n):
         if result == 0:
             break
         n = result
-    
+
     converted_n = reverse_str (converted_n)
     if is_negative:
         converted_n = "-" + converted_n
@@ -63,7 +63,7 @@ def convert_bin_to_hex (b):
 
 
 '''
-convert_to_hex is a function that takes a string n, and 
+convert_to_hex is a function that takes a string n, and
 a string called base. This function converts n in
 hexadecimal depending on the string base.
 It returns ultimately a string containing the hexadecimal
@@ -78,7 +78,6 @@ def convert_to_hex (n, base):
         return str (n)
     else:
         return f"ERROR : {base} IS NOT A SUPPORTED BASE YET. IT FUNCTIONS ONLY FOR bin/dec/hex BASES ONLY"
-
 
 if __name__ == "__main__":
     print(convert_to_hex("-1988971", "dec"))

@@ -39,7 +39,7 @@ def convert_hex_to_dec(n):
         #ajoute 1 a la puissance de la fonction ci dessus car on passe a l'element suivant
         power += 1
     #retourne l'entier convertis.
-    return converted_n
+    return str(converted_n)
 
 #cette fonction convertis un binaire en decimal,
 #elle prend en entree un binaire qui peut etre sous forme d'un entier ou d'une chaine de caractere.
@@ -63,7 +63,7 @@ def convert_bin_to_dec(n):
         power += 1
 
     #retourne l'entier convertis.
-    return converted_n
+    return str(converted_n)
 
 #cette fonction convertis une chaine decimale, binaire ou hexadecimale en decimal.
 #prend en entree une chaine et la base de cette chaine, retourne la chaine equivalente en decimal.
@@ -85,3 +85,7 @@ def convert_to_dec(n,base):
 
     return answ
 
+if __name__ == "__main__":
+	print(convert_to_dec("1988971", "dec") == "1988971")
+	print(convert_to_dec("1e596b", "hex") == "1988971")
+	print(convert_to_dec("111100101100101101011", "bin") == "1988971")
