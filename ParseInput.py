@@ -15,10 +15,12 @@ of following arguments (*possible_inputs) corresponding to
 the different available inputs that the user can choose.
 '''
 def wait_for_input (text, error_text, *possible_inputs):
-    current_input = input (text)
+    current_input = get_input (text)
+    if current_input == "EXIT":
+        quit ()
     while current_input not in possible_inputs:
         print (error_text)
-        current_input = input (text)
+        current_input = get_input (text)
     return current_input
 
 
@@ -83,7 +85,7 @@ It takes no arguments, and returns two strings: n and initial_base
 '''
 def get_n_and_base ():
     while True:
-        n = input ("Insert the number : ")
+        n = get_input ("Insert the number : ")
         initial_base = wait_for_input (
             "Insert the number's base (dec/bin/hex) : ",
             "ERROR, INITIAL BASE IS NOT SUPPORTED YET",
@@ -96,6 +98,16 @@ def get_n_and_base ():
     return n, initial_base
 
 
+'''
+get_input is a function that takes a string text
+and returns the user input, unless the user
+input 'EXIT' which makes the program exit.
+'''
+def get_input (text):
+    i = input (text)
+    if i == "EXIT":
+        quit ()
+    return i
 '''
 get_inputs is a function that gets all necessary user's inputs.
 It takes no arguments, and returns three strings :
