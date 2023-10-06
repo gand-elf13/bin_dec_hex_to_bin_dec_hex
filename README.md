@@ -32,7 +32,7 @@ $ python3 main.py
 Ne touchez pas aux modules ni au programme stockés dans le fichier.
 Pour pouvoir utiliser ce programme, il ne faut qu'exécuter le fichier main.py présent dans le répositoire.
 
-## Cahier des charges :
+## Cahier des charges
 - Sans utiliser certaines fonctions de base de python ;
 - Sans utiliser de class ;
 - IHM en ligne de commande obligatoire ;
