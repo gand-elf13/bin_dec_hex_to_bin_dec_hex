@@ -16,9 +16,6 @@ the different available inputs that the user can choose.
 '''
 def wait_for_input (text, error_text, *possible_inputs):
     current_input = get_input (text)
-    if current_input == "EXIT":
-        print ("PROGRAM IS NOW EXITING")
-        quit ()
     while current_input not in possible_inputs:
         print (error_text)
         current_input = get_input (text)
