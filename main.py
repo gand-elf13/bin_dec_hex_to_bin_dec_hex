@@ -15,7 +15,7 @@ def introduce_program ():
 MAIN PART OF THE PROGRAM
 '''
 if __name__ == "__main__":
-    print_with_font ("PYTHON NUMBER PROGRAM")
+    print_with_font ("NUMBER CONVERSION PROGRAM")
     introduce_program ()
     while True:
         n, initial_base, final_base = get_inputs ()
