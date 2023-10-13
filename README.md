@@ -7,7 +7,7 @@
 3. [Utilisation](#Utilisation-du-programme)
 4. [Cahier des charges](#Cahier-des-charges)
 5. [Règles de syntaxe](#Règles-de-syntaxe)
-
+6. [Documentation](#documentation)
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
 Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
@@ -42,4 +42,13 @@ Pour pouvoir utiliser ce programme, il ne faut qu'exécuter le fichier main.py p
 
 ## Règles de syntaxe
 - Les fonctions sont sous la forme : lorem_ipsum_dolom ;
-- Les variables sont sous la forme : LoremIpsumDolom.
+- Les variables sont sous la forme : lorem_ipsum_dolom.
+
+## Documentation
+
+la documentation est aussi disponible sous forme d'un notebook jupyter interactif a telecharger ici :
+
+-[Documentation Convertion vers hexadecimal](Documentation\ConvertToHexDocumentation.ipynb)
+
+-[Documentation recuperation des inputs](Documentation/ParseInputDocumentation.ipynb)
+
