@@ -33,7 +33,7 @@ def get_font ():
 def print_with_font (text):
     text = text.upper ()
     font_dic = get_font()
-    for i in range (5):
+    for i in range (6):
         for letter_index, letter in enumerate(text):
             separator = " "
             if letter in alphabet:
