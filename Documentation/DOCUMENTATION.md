@@ -67,3 +67,20 @@ qui convertis un decimal `b` en binaire
 - `convert_hex_to_bin (b)`
 
 qui convertis un hexadecimal `b` en un binaire. en le convertissant en decimal avec `convert_to_dec` puis en binaire en utilisant la fonction `convert_dec_to_bin()`.
+
+### Dans ParseInput
+
+WIP
+
+
+### Dans AsciiArt
+
+WIP
+
+### Dans main
+
+WIP
+
+## Utilisation
+
+Chaque fichier peut etre utilise independament des autre a part ConvertToBin et ConvertToHex qui utilisent ConvertToDec, en l'important a l'aide de la fonction `import`.
