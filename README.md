@@ -46,7 +46,7 @@ Pour pouvoir utiliser ce programme, il ne faut qu'exécuter le fichier main.py p
 
 ## Documentation
 
->la documentation est aussi disponible sous forme d'un notebook jupyter interactif a >telecharger ici :
+> la documentation est aussi disponible sous forme d'un notebook jupyter interactif a >telecharger ici :
 
 >-[Documentation Convertion vers hexadecimal](Documentation\ConvertToHexDocumentation.ipynb)
 
