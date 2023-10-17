@@ -13,7 +13,7 @@ Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
 
 ## Status du projet
-phase finale, mise au propre + debug
+phase finale, mise au propre + debug + comparaison avec IA à faire
 
 ## Installation du programme
 ### En ligne de commande
@@ -49,7 +49,7 @@ Pour pouvoir utiliser ce programme, il ne faut qu'exécuter le fichier main.py p
 
 >la documentation est aussi disponible sous forme d'un notebook jupyter interactif a telecharger ici :
 
->-[Documentation Convertion vers hexadecimal](Documentation\ConvertToHexDocumentation.ipynb)
+>-[Documentation Convertion vers hexadecimal](Documentation/ConvertToHexDocumentation.ipynb)
 
 >-[Documentation recuperation des inputs](Documentation/ParseInputDocumentation.ipynb)
 
