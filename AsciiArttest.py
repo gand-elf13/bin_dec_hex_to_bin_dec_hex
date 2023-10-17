@@ -20,8 +20,6 @@ def get_fontupdated ():
         return font_dic
     
 
-get_fontupdated()
-
 def print_with_font (text):
     text = text.upper ()
     font_dic = get_fontupdated()
@@ -39,6 +37,4 @@ def print_with_font (text):
         print()
 
 if __name__ == "__main__":
-    print_with_font ("slt les coupain")
-
-    print_with_font ("nopqrstuvwxyz")
+    print_with_font ("test")
