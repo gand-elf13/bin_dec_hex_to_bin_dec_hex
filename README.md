@@ -1,5 +1,7 @@
 # bin_dec_hex_to_bin_dec_hex
 ***
+Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
+Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
 ## Table of Contents
 1. [Status](#Status-du-projet)
@@ -8,8 +10,7 @@
 4. [Cahier des charges](#Cahier-des-charges)
 5. [Règles de syntaxe](#Règles-de-syntaxe)
 6. [Documentation](#documentation)
-Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
-Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
+
 
 ## Status du projet
 phase finale, mise au propre + debug
