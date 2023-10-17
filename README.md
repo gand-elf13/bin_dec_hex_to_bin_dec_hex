@@ -12,7 +12,7 @@ Projet d'écriture d'un programme Python qui transforme un entier écrit en bina
 Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
 ## Status du projet
-phase finale, mise au propre + debug
+phase finale, mise au propre + debug + comparaison avec IA à faire
 
 ## Installation du programme
 ### En ligne de commande
