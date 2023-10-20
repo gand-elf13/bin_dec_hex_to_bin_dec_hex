@@ -36,9 +36,6 @@ returns it (as a string)
 '''
 def convert_dec_to_hex (n):
     converted_n = ""
-    is_negative = int (n) < 0
-    if is_negative:
-        n = n [1:]
     while True:
         result, remainder = divmod (int (n), 16)
         converted_n += convert_remainder (remainder)
@@ -47,8 +44,6 @@ def convert_dec_to_hex (n):
         n = result
 
     converted_n = reverse_str (converted_n)
-    if is_negative:
-        converted_n = "-" + converted_n
     return converted_n
 
 
@@ -80,6 +75,6 @@ def convert_to_hex (n, base):
         return "ERROR : NOT A SUPPORTED BASE YET. IT FUNCTIONS ONLY FOR bin/dec/hex BASES ONLY"
 
 if __name__ == "__main__":
-    print(convert_to_hex("-1988971", "dec"))
+    print(convert_to_hex("1988971", "dec"))
     print(convert_to_hex("1ae867f987d", "hex") == "1ae867f987d")
     print(convert_to_hex("100100101", "bin") == "125")
