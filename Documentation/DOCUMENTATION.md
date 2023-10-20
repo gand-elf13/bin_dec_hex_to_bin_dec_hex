@@ -1,72 +1,54 @@
 # Documentation
+---
+## Organisation des fichiers
 
-## Organisation des fichiers.
-
-les conversions sont effectuées par 3 fichiers : 
+Les conversions sont effectuées par 3 fichiers : 
 - [ConvertToBin.py](../ConvertToBin.py)
 - [ConvertToDec.py](../ConvertToDec.py)
 - [ConvertToHex.py](../ConvertToHex.py)
 
-l'IHM est assurée par le fichier :
-- [ParseInputs.py](../ParseInput.py)
+L'IHM est assurée par le fichier :
+- [ParseInput.py](../ParseInput.py)
 
-qui utilise les fichiers :
+Utilisant les fichiers :
 
 - [AsciiArt.py](../AsciiArt.py)
-- [AsciiArtFont.py](../AsciiArtFont.txt)
+- [AsciiArtFont.txt](../AsciiArtFont.txt)
 
-afin de generer le titre.
+Afin de générer le titre.
 
-la mise en relation des differentes parties du programme est effectue par le fichier :
+La mise en relation des différentes parties du programme est effectuée par le fichier :
 
 - [main.py](../main.py)
 
-## les fonctions:
+## Les principales fonctions:
 
-### Dans Convert To Dec
+### Dans ConvertToDec.py
 
-la fonction :  `convert_to_dec (n, base)`
+- `convert_to_dec (n, base)` est une fonction qui transforme n'importe quelle chaîne de caractères `n` associée à une base disponible appelée `base` en un nombre décimal.
+Cette fonction utilise les fonctions :
 
-transforme n'importe quelle chaine de charactere `n` associée a une base suportée `base` en un nombre decimal.
+- `convert_hex_to_dec (b)` convertissant un hexadecimal `b` en décimal
+
+- `convert_bin_to_dec (b)` convertissant un binaire `b` en décimal
+
+### Dans ConvertToHex.py
+
+- `convert_to_hex (n, base)` transformant n'importe quelle chaîne de caractères `n` associée à une base disponible appelée `base` en un nombre hexadécimal.
 elle utilise les fonctions :
 
-- `convert_hex_to_dec (b)`
+- `convert_dec_to_hex (b)` convertissant un décimal `b` en hexadécimal
 
-qui convertis un hexadecimal `b` en decimal
+- `convert_bin_to_hex (b)` convertissant un binaire `b` en un hexadécimal, en le convertissant d'abord en décimal via `convert_to_dec` puis en hexadécimal via `convert_dec_to_hex`.
 
-- `convert_bin_to_dec (b)`
+### Dans ConvertToBin.py
 
-qui convertis un binaire `b` en un decimal
-
-### Dans Convert To Hex
-
-la fonction :  `convert_to_hex (n, base)`
-
-transforme n'importe quelle chaine de charactere `n` associée a une base suportée `base` en un nombre hexadecimal.
+- `convert_to_bin (n, base)` transformant n'importe quelle chaîne de caractères `n` associée a une base disponible appelée `base` en un nombre binaire.
 elle utilise les fonctions :
 
-- `convert_dec_to_hex (b)`
+- `convert_dec_to_bin (b)` convertissant un décimal `b` en binaire
 
-qui convertis un decimal `b` en hexadecimal
-
-- `convert_bin_to_hex (b)`
-
-qui convertis un binaire `b` en un hexadecimal. en le convertissant en decimal avec `convert_to_dec` puis en hexadecimal en utilisant la fonction `convert_dec_to_hex()`.
-
-### Dans Convert To Bin
-
-la fonction :  `convert_to_bin (n, base)`
-
-transforme n'importe quelle chaine de charactere `n` associée a une base suportée `base` en un nombre binaire.
-elle utilise les fonctions :
-
-- `convert_dec_to_bin (b)`
-
-qui convertis un decimal `b` en binaire
-
-- `convert_hex_to_bin (b)`
-
-qui convertis un hexadecimal `b` en un binaire. en le convertissant en decimal avec `convert_to_dec` puis en binaire en utilisant la fonction `convert_dec_to_bin()`.
+- `convert_hex_to_bin (b)` convertissant un hexadécimal `b` en un binaire, en le convertissant d'abord en décimal via `convert_to_dec` puis en binaire via `convert_dec_to_bin`.
 
 ### Dans ParseInput
 
@@ -83,4 +65,4 @@ WIP
 
 ## Utilisation
 
-Chaque fichier peut etre utilise independament des autre a part ConvertToBin et ConvertToHex qui utilisent ConvertToDec, en l'important a l'aide de la fonction `import`.
+Chaque fichier peut être utilisé indépendemment des autres, mis à part ConvertToBin.py et ConvertToHex.py qui emploient ConvertToDec, en l'important a l'aide du keyword `import`.
