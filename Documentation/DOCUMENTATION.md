@@ -52,8 +52,11 @@ elle utilise les fonctions :
 
 ### Dans ParseInput
 
-WIP
+- `output_result (n, initial_base, final_base)` est une fonction affichant le résultat de la conversion de l'entier naturel `n` en base `initial_base` à la base `final_base`. Cette fonction prend en arguments trois strings et ne retourne rien.
 
+- `get_inputs ()` est une fonction permettant de recueillir les entrées de l'utilisateur (étant le nombre entier à convertir, sa base, ainsi que la base dans laquelle on veut convertir l'entier naturel). Par conséquence, cette fonction ne prend aucun argument, mais renvoie trois strings.
+
+- `wait_for_input (text, error_text, *possible_inputs)` est une fonction permettant d'obtenir une entrée de l'utilisateur après avoir afficher le string `texte`. Si l'entrée donnée n'est pas dans les différents `*possible_inputs`, alors on affiche `error_text` et on redemande à l'utilisateur d'entrer une information jusqu'à ce qu'elle soit validée.
 
 ### Dans AsciiArt
 
