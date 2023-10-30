@@ -86,13 +86,13 @@ def get_n_and_base ():
         n = get_input ("Insert the number : ")
         initial_base = wait_for_input (
             "Insert the number's base (dec/bin/hex) : ",
-            "ERROR, INITIAL BASE IS NOT SUPPORTED YET",
+            "ERROR, INITIAL BASE IS NOT SUPPORTED YET OR IS INVALID",
             "dec", "bin", "hex",
         )
         if is_input_valid (n, initial_base):
             break
         else:
-            print ("ERROR, THE INPUT NUMBER DOESN'T FIT ITS BASE")
+            print ("ERROR, THE INPUT NUMBER DOESN'T FIT ITS BASE OR IS INVALID")
     return n, initial_base
 
 
@@ -106,6 +106,8 @@ def get_input (text):
     if i == "EXIT":
         quit ()
     return i
+
+
 '''
 get_inputs is a function that gets all necessary user's inputs.
 It takes no arguments, and returns three strings :
@@ -115,7 +117,7 @@ def get_inputs ():
     n, initial_base = get_n_and_base ()
     final_base = wait_for_input (
         "To which base do you want to conver this number? (dec/bin/hex) : ",
-        "ERROR, FINAL BASE IS NOT SUPPORTED YET",
+        "ERROR, FINAL BASE IS NOT SUPPORTED YET OR IS INVALID",
         "dec", "bin", "hex"
     )
     return n, initial_base, final_base

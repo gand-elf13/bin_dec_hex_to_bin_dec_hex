@@ -1,5 +1,5 @@
 from ParseInput import get_inputs, output_result, wait_for_input
-from AsciiArttest import print_with_font
+from AsciiArt import print_with_font
 
 '''
 introduce_program is a function that simply prints a description about the program.
@@ -7,8 +7,10 @@ It takes no arguments, and returns None.
 This function is executed before the program starts.
 '''
 def introduce_program ():
-    print ("This is a program used to convert numbers into different bases")
+    print ("This is a program used to convert numbers into different supported bases (binary, decimal, and hexadecimal currently).")
+    print ("If you want to quit the program at any point of the algorithm, input 'EXIT'.")
     print ("Please keep in mind that the program is case sensitive!")
+    print ("(Hexadecimals' letters are input and output in lowercase!)") 
 
 
 '''
