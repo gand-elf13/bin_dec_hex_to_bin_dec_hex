@@ -104,7 +104,7 @@ input 'EXIT' which makes the program exit.
 def get_input (text):
     i = input (text)
     if i == "EXIT":
-        print ("PROCESS IS EXITING")
+        print ("PROCESS IS IMMEDIATELY EXITING")
         quit ()
     return i
 
@@ -127,8 +127,8 @@ def get_inputs ():
 '''
 output_result is a function that takes 3 arguments
 (string n, initial_base, final_base) and outputs
-the result of the number base conversion. As such,
-it returns None.
+the result of the number base conversion.
+It returns the result of the conversion.
 '''
 def output_result (n, initial_base, final_base):
     final_n = ""
@@ -139,6 +139,6 @@ def output_result (n, initial_base, final_base):
     elif final_base == "bin":
         final_n = convert_to_bin (n, initial_base)
     print ("The number %s (%s) in %s base is %s" % (n, initial_base, final_base, final_n))
-
+    return final_n
 
 
