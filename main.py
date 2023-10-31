@@ -7,7 +7,9 @@ It takes no arguments, and returns None.
 This function is executed before the program starts.
 '''
 def introduce_program ():
-    print ("This is a program used to convert numbers into different supported bases (binary, decimal, and hexadecimal currently).")
+    print_with_font ("BDH-TO-BDH")
+    print ("This is a program, made by GALTIER Maxime & DUCLOS Marc-Antoine & RACIC Leonardo, " \
+        + "able to convert numbers into different supported bases (binary, decimal, and hexadecimal currently).")
     print ("If you want to quit the program at any point of the algorithm, input 'EXIT'.")
     print ("Please keep in mind that the program is case sensitive!")
     print ("(Hexadecimals' letters are input and output in lowercase!)") 
@@ -17,7 +19,6 @@ def introduce_program ():
 MAIN PART OF THE PROGRAM
 '''
 if __name__ == "__main__":
-    print_with_font ("BDH-TO-BDH")
     introduce_program ()
     while True:
         n, initial_base, final_base = get_inputs ()
@@ -32,4 +33,4 @@ if __name__ == "__main__":
             print ("PROCESS IS NOW EXITING")
             break
         else:
-        	print ("\n")
+            print ("\n")

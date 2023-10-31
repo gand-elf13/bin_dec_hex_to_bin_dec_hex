@@ -104,6 +104,7 @@ input 'EXIT' which makes the program exit.
 def get_input (text):
     i = input (text)
     if i == "EXIT":
+        print ("PROCESS IS EXITING")
         quit ()
     return i
 
