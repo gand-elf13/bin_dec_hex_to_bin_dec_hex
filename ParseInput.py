@@ -4,6 +4,19 @@ from ConvertToHex import convert_to_hex
 
 
 '''
+get_input is a function that takes a string text
+and returns the user input, unless the user
+input 'EXIT' which makes the program exit.
+'''
+def get_input (text):
+    i = input (text)
+    if i == "EXIT":
+        print ("PROCESS IS IMMEDIATELY EXITING")
+        quit ()
+    return i
+
+
+'''
 wait_for_input is a function that is made to get user's input,
 in a more bug-robust way. It basically prints a text,
 gets user's input, and if the user's input is in one of
@@ -96,17 +109,6 @@ def get_n_and_base ():
     return n, initial_base
 
 
-'''
-get_input is a function that takes a string text
-and returns the user input, unless the user
-input 'EXIT' which makes the program exit.
-'''
-def get_input (text):
-    i = input (text)
-    if i == "EXIT":
-        print ("PROCESS IS IMMEDIATELY EXITING")
-        quit ()
-    return i
 
 
 '''
