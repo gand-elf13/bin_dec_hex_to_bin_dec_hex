@@ -72,6 +72,7 @@ if __name__ == "__main__":
                                               )
             if saving == "y":
                 save()
+                print("saving succesfull.")
 
             print ("PROCESS IS NOW EXITING")
             break
