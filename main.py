@@ -30,7 +30,11 @@ def save():
 
     with open ("results.txt", "a") as file :
         file.write("\n")
-        file.write(str(conversions))
+        for c in conversions:
+            text = "(" + c ["initial_base"] + ")  " + c ["n"] + "  ==>  " \
+                + c ["conversion_result"] + "  (" + c ["final_base"] + ")" 
+            
+            file.write(text)
         file.close()
 
 
