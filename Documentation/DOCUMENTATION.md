@@ -66,7 +66,11 @@ elle utilise les fonctions :
 
 ### Dans main
 
-- `introduce_program ()` ecrit les informations d'utilisation du programme ainsi que le titre a l'aide de la fonction `print_with_font ()` importée depuis [AsciiArt.py](../AsciiArt.py)
+- `introduce_program ()` ecrit les informations d'utilisation du programme ainsi que le titre a l'aide de la fonction `print_with_font ()` importée depuis [AsciiArt.py](../AsciiArt.py) .
+
+- `display_conversions ()` ecrit toute les convertions qui ont été faites depuis le lancement du programme.
+
+la dernière partie n'est executée que si le programme est executé directement. elle appelle la fonction `introduce_program ()`. WIP leonardo explique comment marche ton truc j'ai la flemme... 
 
 ## Utilisation
 
