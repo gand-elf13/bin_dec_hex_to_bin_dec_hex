@@ -1,7 +1,7 @@
 from string import ascii_uppercase as alphabet
 
 
-def get_fontupdated ():
+def get_font ():
     with open ("font.txt", "r") as file:
         file_content = file.read ()
         rows = file_content.split ("\n")
@@ -22,7 +22,7 @@ def get_fontupdated ():
 
 def print_with_font (text):
     text = text.upper ()
-    font_dic = get_fontupdated()
+    font_dic = get_font()
     for i in range (8):
         for letter_index, letter in enumerate(text):
             separator = " "
