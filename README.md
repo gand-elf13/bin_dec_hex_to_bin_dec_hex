@@ -4,8 +4,11 @@
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
 Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
-Voici une première critique de l'IA générative Chat-GPT 3.5
+Voici le lien affichant l'algorithme de Chat-GPT 3.5 critiqué par nous.
 https://chat.openai.com/share/9cd940a8-99b6-44c1-ad81-06d7b892c0c3
+
+Voici une critique de l'IA générative Chat-GPT 3.5 sur notre travail.
+https://chat.openai.com/share/a01b315c-1758-4ef5-9048-6eeecce19389
 
 ## Sommaire
 1. [Status](#Status-du-projet)
@@ -17,6 +20,10 @@ https://chat.openai.com/share/9cd940a8-99b6-44c1-ad81-06d7b892c0c3
 
 
 ## Status du projet
+- Nous avons réalisé tous les modules nécessaires ;
+- Nous avons amélioré l'expérience de l'utilisateur via l'art ASCII ;
+- Nous avons comparév notre travail avec celui de Chat-GPT 3.5
+- Nous
 phase finale, mise au propre + debug + comparaison avec IA à faire
 
 ## Installation du programme
