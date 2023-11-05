@@ -60,11 +60,17 @@ elle utilise les fonctions :
 
 ### Dans AsciiArt
 
-WIP
+- `print_with_font (text)` est une fonction qui premierement importe l'equivalent de chaque lettre a l'aide de la fonction `get_font`. elle utilise ces equivqlence pour ecrire un texte donné en argument avec la police choisie.
+
+- `get_font ()` est une fonction qui retourne un dictionnaire comprenant pour chaque lettre une liste correspondant a chaque ligne de la police.
 
 ### Dans main
 
-WIP
+- `introduce_program ()` ecrit les informations d'utilisation du programme ainsi que le titre a l'aide de la fonction `print_with_font ()` importée depuis [AsciiArt.py](../AsciiArt.py) .
+
+- `display_conversions ()` ecrit toute les convertions qui ont été faites depuis le lancement du programme.
+
+la dernière partie n'est executée que si le programme est executé directement. elle appelle la fonction `introduce_program ()`. WIP leonardo explique comment marche ton truc j'ai la flemme... 
 
 ## Utilisation
 
