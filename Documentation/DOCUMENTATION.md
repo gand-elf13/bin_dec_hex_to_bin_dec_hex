@@ -60,17 +60,17 @@ elle utilise les fonctions :
 
 ### Dans AsciiArt
 
-- `print_with_font (text)` est une fonction qui premierement importe l'equivalent de chaque lettre a l'aide de la fonction `get_font`. elle utilise ces equivqlence pour ecrire un texte donné en argument avec la police choisie.
+- `print_with_font (text)` est une fonction qui premièrement importe l'équivalent de chaque lettre à l'aide de la fonction `get_font`. elle utilise ces équivalences pour écrire un texte donné en argument avec la police choisie.
 
-- `get_font ()` est une fonction qui retourne un dictionnaire comprenant pour chaque lettre une liste correspondant a chaque ligne de la police.
+- `get_font ()` est une fonction qui retourne un dictionnaire comprenant pour chaque lettre une liste correspondant à chaque ligne de la police.
 
 ### Dans main
 
-- `introduce_program ()` ecrit les informations d'utilisation du programme ainsi que le titre a l'aide de la fonction `print_with_font ()` importée depuis [AsciiArt.py](../AsciiArt.py) .
+- `introduce_program ()` écrit les informations d'utilisation du programme ainsi que le titre à l'aide de la fonction `print_with_font ()` importée depuis [AsciiArt.py](../AsciiArt.py) .
 
 - `display_conversions ()` ecrit toute les convertions qui ont été faites depuis le lancement du programme.
 
-la dernière partie n'est executée que si le programme est executé directement. elle appelle la fonction `introduce_program ()`. WIP leonardo explique comment marche ton truc j'ai la flemme... 
+ - La dernière partie n'est executée que si le programme est executé directement. Elle appelle la fonction `introduce_program ()`, réalisant les conversions de l'utilisateur et les affichant après que l'utilisateur n'ait plus envie de réaliser des conversions. 
 
 ## Utilisation
 

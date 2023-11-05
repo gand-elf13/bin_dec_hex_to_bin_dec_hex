@@ -1,7 +1,6 @@
 from string import ascii_uppercase as alphabet
 
 
-
 '''
 get_font is a function that reads the font.txt file and returns a dictionary
 containing the font to apply (it takes no parameters)

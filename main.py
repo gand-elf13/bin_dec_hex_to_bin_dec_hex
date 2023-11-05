@@ -1,7 +1,6 @@
 from ParseInput import get_inputs, output_result, wait_for_input
 from AsciiArt import print_with_font
 
-
 '''
 introduce_program is a function that simply prints a description about the program.
 It takes no arguments, and returns None.

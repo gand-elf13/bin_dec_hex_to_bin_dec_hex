@@ -18,13 +18,13 @@ https://chat.openai.com/share/a01b315c-1758-4ef5-9048-6eeecce19389
 5. [Conventions de dénominations](#Conventions-de-dénominations)
 6. [Documentation](#Documentation)
 
-
 ## Status du projet
 - Nous avons réalisé tous les modules nécessaires ;
+- Nous avons *debug* les modules ;
 - Nous avons amélioré l'expérience de l'utilisateur via l'art ASCII ;
-- Nous avons comparév notre travail avec celui de Chat-GPT 3.5
-- Nous
-phase finale, mise au propre + debug + comparaison avec IA à faire
+- Nous avons comparé notre travail avec celui de Chat-GPT 3.5 ;
+- Nous avons aussi critiqué le travail de Chat-GPT 3.5 ;
+- Nous avons mis au propre la documentation.
 
 ## Installation du programme
 ### En ligne de commande
