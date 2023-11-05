@@ -1,6 +1,7 @@
 from ParseInput import get_inputs, output_result, wait_for_input
 from AsciiArt import print_with_font
 
+
 '''
 introduce_program is a function that simply prints a description about the program.
 It takes no arguments, and returns None.
@@ -25,18 +26,6 @@ def display_conversions (conversions):
         text = "(" + c ["initial_base"] + ")  " + c ["n"] + "  ==>  " \
             + c ["conversion_result"] + "  (" + c ["final_base"] + ")" 
         print (text)
-
-def save():
-
-    with open ("results.txt", "a") as file :
-        file.write("\n")
-        for c in conversions:
-            text = "(" + c ["initial_base"] + ")  " + c ["n"] + "  ==>  " \
-                + c ["conversion_result"] + "  (" + c ["final_base"] + ")" 
-            
-            file.write(text)
-        file.close()
-
 
 
 '''
@@ -66,14 +55,6 @@ if __name__ == "__main__":
         )
         if should_continue == "n":
             display_conversions (conversions)
-            saving = wait_for_input ("Do you want to save your results in a file ? (y/n) : ",
-                                              "ERROR : IT IS A YES OR NO QUESTION ",
-                                              "y", "n",
-                                              )
-            if saving == "y":
-                save()
-                print("saving succesfull.")
-
             print ("PROCESS IS NOW EXITING")
             break
         else:
