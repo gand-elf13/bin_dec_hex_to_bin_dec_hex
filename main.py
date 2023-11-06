@@ -11,7 +11,9 @@ def introduce_program ():
     print_with_font ("BDH-TO-BDH")
     print ("This is a program, made by GALTIER Maxime & DUCLOS Marc-Antoine & RACIC Leonardo, " \
         + "able to convert numbers into different supported bases (binary, decimal, and hexadecimal currently).")
+    print ("After finishing converting, this program will display all the realised conversions, and will update conversions.txt")
     print ("If you want to quit the program at any point of the algorithm, input 'EXIT'.")
+    print ("[[[Do keep in mind that if you do input 'EXIT', all the current conversions won't be saved in results.txt!]]]")
     print ("Please keep in mind that the program is case sensitive!")
     print ("(Hexadecimals' letters are input and output in lowercase!)")
     
@@ -36,7 +38,7 @@ saves all conversions done whilst using the program, unless the user decided to 
 It returns None subsequently
 '''
 def update_txt_file (conversions):
-    with open("conversions.txt", "a") as file:
+    with open ("conversions.txt", "a") as file:
         conversions_texts = get_str_list_conversions (conversions)
         file.write ("\n".join (conversions_texts) + "\n")
         file.close ()
