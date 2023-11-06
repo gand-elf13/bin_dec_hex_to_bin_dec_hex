@@ -1,6 +1,7 @@
 from ParseInput import get_inputs, output_result, wait_for_input
 from AsciiArt import print_with_font
 
+
 '''
 introduce_program is a function that simply prints a description about the program.
 It takes no arguments, and returns None.
@@ -12,7 +13,33 @@ def introduce_program ():
         + "able to convert numbers into different supported bases (binary, decimal, and hexadecimal currently).")
     print ("If you want to quit the program at any point of the algorithm, input 'EXIT'.")
     print ("Please keep in mind that the program is case sensitive!")
-    print ("(Hexadecimals' letters are input and output in lowercase!)") 
+    print ("(Hexadecimals' letters are input and output in lowercase!)")
+    
+
+'''
+get_str_list_conversions is a function taking a list containing dictionaries (conversions) and
+returns a list containing a text summarising each conversions dictionary. As such,
+it returns a list of string, whilst taking a list of dictionaries as a parameter.
+'''
+def get_str_list_conversions (conversions):
+    str_list_conversions = []
+    for c in conversions:
+        text = "(" + c ["initial_base"] + ")  " + c ["n"] + "  ==>  " \
+            + c ["conversion_result"] + "  (" + c ["final_base"] + ")" 
+        str_list_conversions.append (text)
+    return str_list_conversions
+
+
+'''
+update_txt_file is a function taking a list containing dictionaries (conversions) and
+saves all conversions done whilst using the program, unless the user decided to exit mid-process...
+It returns None subsequently
+'''
+def update_txt_file (conversions):
+    with open("conversions.txt", "a") as file:
+        conversions_texts = get_str_list_conversions (conversions)
+        file.write ("\n".join (conversions_texts) + "\n")
+        file.close ()
 
 
 '''
@@ -21,9 +48,7 @@ and outputs them. As such, it takes only one argument (conversions) and returns 
 '''
 def display_conversions (conversions):
     print ("These are all the conversions you have done until now : ")
-    for c in conversions:
-        text = "(" + c ["initial_base"] + ")  " + c ["n"] + "  ==>  " \
-            + c ["conversion_result"] + "  (" + c ["final_base"] + ")" 
+    for text in get_str_list_conversions (conversions):
         print (text)
 
 
@@ -54,6 +79,7 @@ if __name__ == "__main__":
         )
         if should_continue == "n":
             display_conversions (conversions)
+            update_txt_file (conversions)
             print ("PROCESS IS NOW EXITING")
             break
         else:

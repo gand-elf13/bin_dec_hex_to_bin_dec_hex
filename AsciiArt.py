@@ -11,11 +11,11 @@ def get_font ():
         rows = file_content.split ("\n")
         font_dic = {}
 
-        for j in range(26):
+        for j in range (26):
             letter = alphabet [j]
             list_character = []
-            for i in range(8):
-                list_character.append(rows[j*8+i])
+            for i in range (8):
+                list_character.append (rows [j * 8 + i])
             
             font_dic [letter] = list_character
 
