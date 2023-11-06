@@ -60,9 +60,9 @@ $ python3 main.py
 
 > La documentation est aussi disponible sous forme d'un notebook jupyter intéractif à télécharger ici :
 
->-[Documentation Convertion vers hexadecimal](Documentation/ConvertToHexDocumentation.ipynb)
+>-[Documentation : Convertion vers hexadecimal](Documentation/ConvertToHexDocumentation.ipynb)
 
->-[Documentation recuperation des inputs](Documentation/ParseInputDocumentation.ipynb)
+>-[Documentation : Récupération des entrées](Documentation/ParseInputDocumentation.ipynb)
 
 > Le fichier markdown est ici :
 

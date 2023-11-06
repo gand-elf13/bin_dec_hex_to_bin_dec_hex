@@ -6,10 +6,10 @@
 Les conversions sont effectuées par 3 fichiers : 
 - [ConvertToBin.py](../ConvertToBin.py)
 - [ConvertToDec.py](../ConvertToDec.py)
-- [ConvertToHex.py](../ConvertToHex.py) déjà documenté dans [ConvertToHexDocumentation.ipynb](./ConvertToHexDocumentation.ipynb)
+- [ConvertToHex.py](../ConvertToHex.py)
 
 L'IHM est assurée par le fichier :
-- [ParseInput.py](../ParseInput.py) déjà documenté dans [ParseInputDocumentation.ipynb](./ParseInputDocumentation.ipynb)
+- [ParseInput.py](../ParseInput.py)
 
 Utilisant les fichiers :
 
