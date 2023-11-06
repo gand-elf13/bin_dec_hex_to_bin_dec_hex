@@ -97,6 +97,9 @@ It takes no arguments, and returns two strings: n and initial_base
 def get_n_and_base ():
     while True:
         n = get_input ("Insert the number : ")
+        while n == "":
+            print ("ERROR, NUMBER ISN'T INPUT CORRECTLY!!")
+            n = get_input ("Insert the number again : ")
         initial_base = wait_for_input (
             "Insert the number's base (dec/bin/hex) : ",
             "ERROR, INITIAL BASE IS NOT SUPPORTED YET OR IS INVALID",
