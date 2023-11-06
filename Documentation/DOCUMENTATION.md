@@ -6,10 +6,10 @@
 Les conversions sont effectuées par 3 fichiers : 
 - [ConvertToBin.py](../ConvertToBin.py)
 - [ConvertToDec.py](../ConvertToDec.py)
-- [ConvertToHex.py](../ConvertToHex.py)
+- [ConvertToHex.py](../ConvertToHex.py) déjà documenté dans [ConvertToHexDocumentation.ipynb](./ConvertToHexDocumentation.ipynb)
 
 L'IHM est assurée par le fichier :
-- [ParseInput.py](../ParseInput.py)
+- [ParseInput.py](../ParseInput.py) déjà documenté dans [ParseInputDocumentation.ipynb](./ParseInputDocumentation.ipynb)
 
 Utilisant les fichiers :
 
@@ -73,7 +73,7 @@ elle utilise les fonctions :
 
 - `display_conversions ()` écrit en sortie toutes les conversions qui ont été faites depuis le lancement du programme, à l'aide de la fonction `get_str_list_conversions`.
 
-- `update_txt_file (conversions)` est une fonctio prenant une liste de dictionnaires (`conversions`) et écrit à la suite du fichier `conversions.txt` les conversions, à l'aide de la fonction `get_str_list_conversions`.
+- `update_txt_file (conversions)` est une fonction prenant une liste de dictionnaires (`conversions`) et écrit à la suite du fichier `conversions.txt` les conversions, à l'aide de la fonction `get_str_list_conversions`.
 
 - La dernière partie n'est exécutée que si le programme est executé directement. Elle appelle la fonction `introduce_program ()`, réalisant les conversions de l'utilisateur et les affichant après que l'utilisateur n'ait plus envie de réaliser des conversions. 
 
