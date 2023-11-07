@@ -42,7 +42,7 @@ def update_txt_file (conversions):
         conversions_texts = get_str_list_conversions (conversions)
         file.write ("\n".join (conversions_texts) + "\n")
         file.close ()
-    print ("The realised conversions are successfully" \
+    print ("The realised conversions are successfully " \
         + "appended into the conversions.txt file in the repository.")
 
 
