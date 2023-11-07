@@ -78,7 +78,7 @@ if __name__ == "__main__":
         print ("\n")
         should_continue = wait_for_input (
             "Do you want the program to convert another number? (y/n) : ",
-            "ERROR : IT IS A YES OR NO QUESTION ",
+            "ERROR : IT IS A YES OR NO QUESTION (WRITE IN LOWERCASE)",
             "y", "n",
         )
         if should_continue == "n":
