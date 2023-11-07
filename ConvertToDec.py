@@ -9,7 +9,7 @@ def convert_str_to_int (remainder):
 
     #verifie si l'input est une lettre
     if remainder not in higher_coefs:
-        
+
         #si l'input n'est pas une letttre, on renvoie la valeur d'entree.
         return str (remainder)
     else:
@@ -21,18 +21,18 @@ def convert_str_to_int (remainder):
 
 #cette fonction convertis une chaine hexadecimale en decimal.
 #elle prend en entree une chaine de caractére et retourne un entier.
-def convert_hex_to_dec (n):
+def convert_hex_to_dec (h):
 
     #transforme l'input en chaine de caractere pour eviter les cas extremes.
-    n = str (n)
-    #definis les variables; converted_n : la chaine convertis qui sera retournée , power : la puissance 
+    n = str (h)
+    #definis les variables; converted_n : la chaine convertis qui sera retournée , power : la puissance
     converted_n = 0
     power = 0
 
     #boucle principale de la fonction, on utilise reversed() pour passer dans la chaine de droite a gauche
     for i in reversed (n):
-        
-        #ajoute a converted_n la valeur convertie de l'element de la chaine (i), multipliée par : 
+
+        #ajoute a converted_n la valeur convertie de l'element de la chaine (i), multipliée par :
         # 16 a la puissane power qui correspond a la place de l'element dans la chaine de caractere.
         converted_n += int (convert_str_to_int (i)) * (16 ** power)
 
@@ -44,18 +44,18 @@ def convert_hex_to_dec (n):
 #cette fonction convertis un binaire en decimal,
 #elle prend en entree un binaire qui peut etre sous forme d'un entier ou d'une chaine de caractere.
 def convert_bin_to_dec (b):
-    
+
     #transforme l'input en chaine de caractere pour eviter les cas extremes.
     b = str (b)
 
-    #definis les variables; converted_n : la chaine convertis qui sera retournée , power : la puissance 
+    #definis les variables; converted_n : la chaine convertis qui sera retournée , power : la puissance
     converted_n = 0
     power = 0
 
     #boucle principale de la fonction, on utilise reversed() pour passer dans la chaine de droite a gauche
     for i in reversed (b):
-        
-        #ajoute a converted_n la valeur convertie de l'element de la chaine (i), multipliée par : 
+
+        #ajoute a converted_n la valeur convertie de l'element de la chaine (i), multipliée par :
         # 16 a la puissane power qui correspond a la place de l'element dans la chaine de caractere.
         converted_n += int (i) * (2 ** power)
 
@@ -68,7 +68,7 @@ def convert_bin_to_dec (b):
 #cette fonction convertis une chaine decimale, binaire ou hexadecimale en decimal.
 #prend en entree une chaine et la base de cette chaine, retourne la chaine equivalente en decimal.
 def convert_to_dec (n, base):
-    
+
     answ = 0
 
     #si la base est reconnue, renvoie le resultat de la fonction correspondante,

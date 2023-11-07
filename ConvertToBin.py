@@ -22,14 +22,14 @@ def convert_dec_to_bin (n):
         if result == 0:
             break
         n = result
-        
+
     converted_n = reverse_str (converted_n)
     return converted_n
 
 
 # utilisation de la fonction convert_to_dec, obtention du résultat en dec, puis conversion en bin, via la fonction édictée plus haut
-def convert_hex_to_bin (n):
-    n = int (convert_to_dec (n, "hex"))
+def convert_hex_to_bin (h):
+    n = int (convert_to_dec (h, "hex"))
     return convert_dec_to_bin (n)
 
 
