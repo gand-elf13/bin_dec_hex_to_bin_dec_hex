@@ -29,7 +29,7 @@ La mise en relation des différentes parties du programme est effectuée par le 
 - `convert_to_dec (n, base)` est une fonction qui transforme n'importe quelle chaîne de caractères `n` associée à une base disponible appelée `base` en un nombre décimal.
 Cette fonction utilise les fonctions :
 
-- `convert_hex_to_dec (b)` convertissant un hexadecimal `b` en décimal
+- `convert_hex_to_dec (h)` convertissant un hexadecimal `h` en décimal
 
 - `convert_bin_to_dec (b)` convertissant un binaire `b` en décimal
 
@@ -38,7 +38,7 @@ Cette fonction utilise les fonctions :
 - `convert_to_hex (n, base)` transformant n'importe quelle chaîne de caractères `n` associée à une base disponible appelée `base` en un nombre hexadécimal.
 elle utilise les fonctions :
 
-- `convert_dec_to_hex (b)` convertissant un décimal `b` en hexadécimal
+- `convert_dec_to_hex (n)` convertissant un décimal `n` en hexadécimal
 
 - `convert_bin_to_hex (b)` convertissant un binaire `b` en un hexadécimal, en le convertissant d'abord en décimal via `convert_to_dec` puis en hexadécimal via `convert_dec_to_hex`.
 
@@ -47,9 +47,9 @@ elle utilise les fonctions :
 - `convert_to_bin (n, base)` transformant n'importe quelle chaîne de caractères `n` associée a une base disponible appelée `base` en un nombre binaire.
 elle utilise les fonctions :
 
-- `convert_dec_to_bin (b)` convertissant un décimal `b` en binaire
+- `convert_dec_to_bin (n)` convertissant un décimal `n` en binaire
 
-- `convert_hex_to_bin (b)` convertissant un hexadécimal `b` en un binaire, en le convertissant d'abord en décimal via `convert_to_dec` puis en binaire via `convert_dec_to_bin`.
+- `convert_hex_to_bin (h)` convertissant un hexadécimal `h` en un binaire, en le convertissant d'abord en décimal via `convert_to_dec` puis en binaire via `convert_dec_to_bin`.
 
 ### Dans ParseInput.py
 
