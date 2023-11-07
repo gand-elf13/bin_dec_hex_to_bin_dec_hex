@@ -79,4 +79,4 @@ elle utilise les fonctions :
 
 ## Utilisation
 
-Chaque fichier peut être utilisé indépendemment des autres, mis à part ConvertToBin.py et ConvertToHex.py qui emploient ConvertToDec, en l'important a l'aide du keyword `import`.
+Chaque fichier peut être utilisé indépendemment des autres, mis à part [ConvertToBin.py](../ConvertToBin.py)et [ConvertToHex.py](../ConvertToHex.py) qui emploient [ConvertToDec.py](../ConvertToDec.py), en l'important a l'aide du keyword `import`.
