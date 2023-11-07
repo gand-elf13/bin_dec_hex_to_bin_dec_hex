@@ -8,7 +8,7 @@ It takes no arguments, and returns None.
 This function is executed before the program starts.
 '''
 def introduce_program ():
-    print_with_font ("BDH-TO-BDH")
+    print_with_font ("BIN-DEC-HEX")
     print ("This is a program, made by GALTIER Maxime & DUCLOS Marc-Antoine & RACIC Leonardo, " \
         + "able to convert numbers into different supported bases (binary, decimal, and hexadecimal currently).")
     print ("After finishing converting, this program will display all the realised conversions, and will update conversions.txt")
@@ -16,7 +16,7 @@ def introduce_program ():
     print ("[[[Do keep in mind that if you do input 'EXIT', all the current conversions won't be saved in results.txt!]]]")
     print ("Please keep in mind that the program is case sensitive!")
     print ("(Hexadecimals' letters are input and output in lowercase!)")
-    
+
 
 '''
 get_str_list_conversions is a function taking a list containing dictionaries (conversions) and
@@ -27,7 +27,7 @@ def get_str_list_conversions (conversions):
     str_list_conversions = []
     for c in conversions:
         text = "(" + c ["initial_base"] + ")  " + c ["n"] + "  ==>  " \
-            + c ["conversion_result"] + "  (" + c ["final_base"] + ")" 
+            + c ["conversion_result"] + "  (" + c ["final_base"] + ")"
         str_list_conversions.append (text)
     return str_list_conversions
 
@@ -42,6 +42,8 @@ def update_txt_file (conversions):
         conversions_texts = get_str_list_conversions (conversions)
         file.write ("\n".join (conversions_texts) + "\n")
         file.close ()
+    print ("The realised conversions are successfully" \
+        + "appended into the conversions.txt file in the repository.")
 
 
 '''
@@ -60,10 +62,10 @@ MAIN PART OF THE PROGRAM
 if __name__ == "__main__":
     introduce_program ()
     conversions = []
-    
+
     while True:
         n, initial_base, final_base = get_inputs ()
-        
+
         conversion_result = output_result (n, initial_base, final_base)
         conversion_dict = {
             "n" : n,
@@ -72,7 +74,7 @@ if __name__ == "__main__":
             "conversion_result" : conversion_result,
         }
         conversions.append (conversion_dict)
-        
+
         print ("\n")
         should_continue = wait_for_input (
             "Do you want the program to convert another number? (y/n) : ",

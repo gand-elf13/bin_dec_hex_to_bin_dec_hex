@@ -14,8 +14,8 @@ convert_remainder is a function that takes the remainder (int),
 converts it to a hexadecimal notation, and returns it (string).
 '''
 def convert_remainder (remainder):
-	coefficients = "0123456789abcdef"
-	return coefficients [remainder]
+    coefficients = "0123456789abcdef"
+    return coefficients [remainder]
 
 
 '''
