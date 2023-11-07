@@ -4,10 +4,10 @@
 Projet d'écriture d'un programme Python qui transforme un entier écrit en binaire, décimal, ou hexadécimal, en un entier binaire, décimal, ou hexadécimal.
 Fait par GALTIER Maxime, DUCLOS Marc-Antoine, RACIC Leonardo
 
-Voici le lien affichant l'algorithme de Chat-GPT 3.5 critiqué par nous.
+Voici le lien affichant l'algorithme de Chat-GPT 3.5 critiqué par nous : 
 https://chat.openai.com/share/9cd940a8-99b6-44c1-ad81-06d7b892c0c3
 
-Voici une critique de l'IA générative Chat-GPT 3.5 sur notre travail.
+Voici une critique de l'IA générative Chat-GPT 3.5 sur notre travail : 
 https://chat.openai.com/share/a01b315c-1758-4ef5-9048-6eeecce19389
 
 ## Sommaire
@@ -53,17 +53,18 @@ $ python3 main.py
 - Comparaison avec le travail d'une IA générative.
 
 ## Conventions de dénomination
-- Les noms des fonctions et des variables sont en snake_case (qui est la convention de dénomination en python) ;
-- Les noms des fichiers sont en PascalCase.
+- Les noms des fonctions, des variables, des fichiers `.txt`, ainsi que le fichier python `main.py` sont en snake_case (qui est la convention de dénomination en python) ;
+- Les noms des modules, et documentations `.ipynb` sont en PascalCase ;
+- Les noms des fichiers `.md` sont en majuscule
 
 ## Documentation
 
-> La documentation est aussi disponible sous forme d'un notebook jupyter intéractif à télécharger ici :
+La documentation est aussi disponible sous forme d'un notebook jupyter intéractif à télécharger ici :
 
 >-[Documentation : Convertion vers hexadecimal](Documentation/ConvertToHexDocumentation.ipynb)
 
 >-[Documentation : Récupération des entrées](Documentation/ParseInputDocumentation.ipynb)
 
-> Le fichier markdown est ici :
+Le fichier markdown est ici :
 
 >-[Documentation](Documentation/DOCUMENTATION.md)
