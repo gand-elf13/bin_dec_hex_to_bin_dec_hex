@@ -11,7 +11,7 @@ input 'EXIT' which makes the program exit.
 def get_input (text):
     i = input (text)
     if i == "EXIT":
-        print ("PROCESS IS IMMEDIATELY EXITING")
+        print ("PROCESS IS IMMEDIATELY EXITING - THE NEW CONVERSIONS WON'T BE SAVED")
         quit ()
     return i
 

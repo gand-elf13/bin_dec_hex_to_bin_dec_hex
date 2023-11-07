@@ -84,7 +84,6 @@ if __name__ == "__main__":
         if should_continue == "n":
             display_conversions (conversions)
             update_txt_file (conversions)
-            print ("PROCESS IS NOW EXITING - THE CONVERSIONS WON'T BE SAVED")
             break
         else:
             print ("\n")
